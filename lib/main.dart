@@ -1,6 +1,7 @@
 import 'package:app_flutter_audio/src/audio_player_assets.dart';
 import 'package:app_flutter_audio/src/audio_player_assets_cache.dart';
 import 'package:app_flutter_audio/src/audio_player_url.dart';
+import 'package:app_flutter_audio/src/audio_player_url_local.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,12 +30,13 @@ class MyApp extends StatelessWidget {
         ),
         //home: const AudioPlayerURL(),
         home: const AudioPlayerAssets(),
-        initialRoute: 'audio_players_assets_cache',
+        initialRoute: 'audio_players_url',
         routes: {
           'audio_players_url': (context) => const AudioPlayerURL(),
           'audio_players_assets': (context) => const AudioPlayerURL(),
           'audio_players_assets_cache': (context) =>
               const AudioPlayerAssetsCache(),
+          'audio_players_url_local': (context) => const AudioPlayerURLLocal(),
         });
   }
 }

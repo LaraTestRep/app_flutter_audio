@@ -90,7 +90,8 @@ class _AudioPlayerURLState extends State<AudioPlayerURL> {
       estado = 'carregando';
     });
 
-    await player.play(DeviceFileSource(url));
+    //await player.play(DeviceFileSource(url));
+    await player.resume();
     estado = 'tocando';
   }
 
