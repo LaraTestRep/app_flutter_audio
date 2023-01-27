@@ -116,7 +116,7 @@ class _AudioPlayerURLState extends State<AudioPlayerURL> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sound'),
+        title: const Text('Tocando música url'),
       ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
